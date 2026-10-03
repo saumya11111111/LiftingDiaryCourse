@@ -8,12 +8,12 @@ export default function Home() {
       <header className="w-full flex justify-end items-center px-8 py-4 bg-white dark:bg-black border-b border-black/[.08] dark:border-white/[.08]">
         <Show when="signed-out">
           <div className="flex gap-3">
-            <SignInButton>
+            <SignInButton mode="modal">
               <button className="rounded-full border border-black/[.08] dark:border-white/[.145] px-4 py-1.5 text-sm font-medium hover:bg-black/[.04] dark:hover:bg-[#1a1a1a] transition-colors">
                 Sign in
               </button>
             </SignInButton>
-            <SignUpButton>
+            <SignUpButton mode="modal">
               <button className="rounded-full bg-foreground text-background px-4 py-1.5 text-sm font-medium hover:bg-[#383838] dark:hover:bg-[#ccc] transition-colors">
                 Sign up
               </button>
