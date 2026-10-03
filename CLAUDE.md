@@ -18,6 +18,15 @@ npm run lint     # run ESLint
 - **Tailwind CSS v4** via `@tailwindcss/postcss` — no `tailwind.config.js`; configuration is in CSS using `@theme` directives
 - Fonts: Geist Sans and Geist Mono loaded via `next/font/google` with CSS variables `--font-geist-sans` / `--font-geist-mono`
 
+## Docs — Read Before Writing Code
+
+Before generating any code, always consult the relevant file in the `/docs` directory first:
+
+- **`docs/data-fetching.md`** — read before writing any data fetching, database queries, or server actions
+- **`docs/ui.md`** — read before building any UI, using components, or formatting dates
+
+These docs define the mandatory standards for this project. Code that violates them must not be written.
+
 ## Architecture
 
 This is a fresh Next.js App Router project. All routes live under `src/app/`. The root layout (`src/app/layout.tsx`) sets up fonts and the flex column body; pages compose inside that shell.
